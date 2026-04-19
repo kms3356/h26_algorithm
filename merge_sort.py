@@ -22,8 +22,7 @@ def merge(nums,left,mid,right):
         sorted_list[k:right+1] = nums[j:right+1]
     nums[left:right+1] = sorted_list[left:right+1]
 
-A = [5,7,23,14,9,3,59,1]
 nums = list(map(int,input().split()))
-sorted_list = [0] * len(A)
-merge_sort(A, 0,len(A)-1)
-print(A)
+sorted_list = [0] * len(nums)
+merge_sort(nums, 0,len(nums)-1)
+print(nums)
